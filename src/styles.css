@@ -12,7 +12,7 @@ body {
   /*width: 800px;*/
   max-width: 800px;
 
-  background-color: #303030 !important;
+  background-color: #04082e !important;
   padding-bottom: 88px;
   padding-top: 88px;
 }
@@ -70,8 +70,8 @@ mat-card {
 }
 
 mat-card.page-title {
-  background-color: #444;
-  color: white;
+  background-color: #447695;
+  color: #eebd6b;
   padding: 12px 60px 12px 24px;
 }
 

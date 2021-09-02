@@ -1,11 +1,13 @@
 mat-toolbar.footer {
   position: fixed;
   margin-bottom: 0;
-
+  background-color: #447695;
+  color: #eebd6b;
   /* to be synced with body<->header<->footer style */
   min-width: 250px;
   /*width: 800px;*/
   max-width: 800px;
+  overflow: hidden;
 
 /*  min-height: 64px;
   height: 64px;
@@ -52,7 +54,7 @@ mat-toolbar.footer img {
 }
 
 a {
-  color: white;
+  color: #447695;
   text-decoration: none;
 }
 
@@ -65,4 +67,40 @@ app-l10n {
   position: absolute;
   float: left;
   color: black;
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
 }
