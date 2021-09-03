@@ -1,7 +1,7 @@
 version: 0.2
 env:
   variables:
-    S3_BUCKET: "www.rayyaanusmani.com"
+    S3_BUCKET: "portfolio-website-rayyaan"
 phases:
   install:
     runtime-versions:
