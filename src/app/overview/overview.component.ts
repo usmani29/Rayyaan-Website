@@ -33,7 +33,7 @@ export class OverviewComponent implements OnInit {
   public showAvatar() {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.data = {
-      imagePath: 'assets/img/avatar.jpg',
+      imagePath: 'assets/img/avatar.png',
       title: this.generalData.name,
     };
     this.dialog.open(PictureModalComponent, dialogConfig);

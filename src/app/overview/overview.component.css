@@ -14,3 +14,14 @@ i.tag-icon {
 .tag-icon:before {
   color: unset;
 }
+
+.mat-card-header {
+  place-content: center;
+  vertical-align: center;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+.mat-card-avatar {
+  width: 10rem;
+  height: 10rem;
+}
